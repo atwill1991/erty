@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for </title>
+</head>
+<body>
+	<ul id="ul">
+		<li class="li"><button>1</button>45435</li>
+		<li class="li"><button>2</button>3453453</li>
+		<li class="li"><button>3</button>34534</li>
+		<li class="li"><button>4</button>34534</li>
+	</ul>
+	<script type="text/javascript">
+		var ul =document.getElementById("ul");
+		var list = document.querySelectorAll("ul li");
+		var bL = document.getElementsByTagName("button");
+		for(var i =0;i<list.length;i++){
+			 bL[i].index=i;
+			bL[i].onclick = function(){
+				console.log(list)
+				list[this.index].remove()
+			}
+		}
+	</script>
+</body>
+</html>
